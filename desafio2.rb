@@ -23,7 +23,6 @@ end
 puts " "
 
 #3. Mostrar la tabla de multiplicar del 0 hasta el 9, para ello puedes utilizar el ciclo for o while.
-
 i = -1
 while i < 9
   i = i + 1
@@ -36,5 +35,12 @@ while i < 9
   end
 end
 
+puts
 #4. Haciendo uso de .times o el ciclo for dibuja un triángulo con el carácter que
 #consideres más idóneo, pueden ser asteriscos (*) o numerales (#).
+puts "Ingresa un número para dibujarte un triangulo: "
+n = gets.chomp.to_i.abs
+for i in 0..n
+  j = n - (i - 1)
+  puts " " * (j - 1) + ("*" * (i*2 + 1))
+end
